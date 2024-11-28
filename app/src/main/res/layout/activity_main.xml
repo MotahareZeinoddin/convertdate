@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="#FEFEFE"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/fe"
+        android:text="myApplication"
+        android:textColor="#484868"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/calendar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+</androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_aboutme"
+        android:layout_width="match_parent"
+        android:layout_marginTop="115dp"
+        android:fontFamily="@font/f1"
+        android:layout_height="100dp"
+        android:drawableLeft="@drawable/date2"
+        android:background="@drawable/border3"
+        android:textColor="@color/white"
+        android:text="\t\tتبدیل تاریخ میلادی به شمسی"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/btn"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_contactme"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/border4"
+        android:text=" \t راه ارتباطی"
+        android:textSize="25sp"
+        android:fontFamily="@font/f1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/contactme"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_aboutme"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
